@@ -21,6 +21,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/countup.js@2.6.2/dist/countUp.umd.js"></script>
   </head>
   <body>
     <!-- Hedaer start -->
@@ -46,27 +48,27 @@
           >
 
           <a
-            class="text-base border-b md:border-none text-[#fff] md:text-[#000] sm:text-base md:text-lg lg:text-xl font-[500]"
+            class="text-base border-b md:border-none text-[#fff] md:text-[#000] hover:text-[#035e89] sm:text-base md:text-lg lg:text-xl font-[500]"
             href="#"
             >Home</a
           >
           <a
-            class="text-base text-[#fff] md:text-[#000] sm:text-base md:text-lg lg:text-xl font-[500]"
+            class="text-base text-[#fff] md:text-[#000] hover:text-[#035e89] sm:text-base md:text-lg lg:text-xl font-[500]"
             href="#"
             >Services</a
           >
           <a
-            class="text-base text-[#fff] md:text-[#000] sm:text-base md:text-lg lg:text-xl font-[500]"
+            class="text-base text-[#fff] md:text-[#000] hover:text-[#035e89] sm:text-base md:text-lg lg:text-xl font-[500]"
             href="#"
             >Pricing</a
           >
           <a
-            class="text-base text-[#fff] md:text-[#000] sm:text-base md:text-lg lg:text-xl font-[500]"
+            class="text-base text-[#fff] md:text-[#000] hover:text-[#035e89] sm:text-base md:text-lg lg:text-xl font-[500]"
             href="#"
             >Track Shipment</a
           >
           <a
-            class="text-base text-[#fff] md:text-[#000] sm:text-base md:text-lg lg:text-xl font-[500]"
+            class="text-base text-[#fff] md:text-[#000] hover:text-[#035e89] sm:text-base md:text-lg lg:text-xl font-[500]"
             href="#"
             >About Us</a
           >
@@ -82,7 +84,8 @@
           class="header-right w-[40%] sm:w-[25%] md:w-[14%] flex items-center gap-3 justify-end"
         >
           <button
-            class="h-8 sm:h-10 md:h-12 bg-[#035e89] text-xs sm:text-lg md:text-xl font-[600] w-full text-white flex items-center justify-center"
+            id="modal-open-btn"
+            class="h-8 sm:h-10 md:h-12 bg-[#035e89] hover:border-2 hover:border-[#035e89] hover:bg-[#fff] hover:text-[#035e89] transition-all duration-200 text-xs sm:text-lg md:text-xl font-[600] w-full text-white flex items-center justify-center"
           >
             Contact us
           </button>
@@ -121,12 +124,12 @@
             class="showcase-btns z-10 flex flex-col md:flex-row items-center gap-5"
           >
             <button
-              class="h-8 sm:h-10 md:h-12 bg-[#035e89] text-xs sm:text-lg font-[600] w-full md:w-[20%] text-white flex items-center justify-center"
+              class="h-8 sm:h-10 md:h-12 bg-[#035e89] hover:border-2 hover:border-[#035e89] hover:bg-[#fff] hover:text-[#035e89] transition-all duration-200 text-xs sm:text-lg font-[600] w-full md:w-[20%] text-white flex items-center justify-center"
             >
               Get a Free Quote
             </button>
             <button
-              class="h-8 sm:h-10 md:h-12 border-2 border-[#035e89] text-[#035e89] text-xs sm:text-lg font-[600] w-full md:w-[20%] flex items-center justify-center"
+              class="h-8 sm:h-10 md:h-12 border-2 border-[#035e89] hover:border-2 hover:border-[#035e89] hover:bg-[#035e89] hover:text-[#fff] transition-all duration-200 text-[#035e89] text-xs sm:text-lg font-[600] w-full md:w-[20%] flex items-center justify-center"
             >
               Learn More
             </button>
@@ -156,58 +159,64 @@
         <div
           class="gap-4 grid-cols-1 sm:grid-cols-2 md:gap-7 grid md:grid-cols-3"
         >
-          <div
-            class="w-full text-start h-[220px] shadow-xl rounded-[20px] sm:h-[250px] flex flex-col gap-5 p-5 border-2 border-[#9ddfff]"
-          >
-            <button
-              class="w-10 h-10 rounded-lg flex items-center justify-center text-[#035e89] bg-[#eff9ff]"
+          <div data-aos="zoom-in">
+            <div
+              class="w-full text-start h-[220px] shadow-xl rounded-[20px] sm:h-[250px] flex flex-col gap-5 p-5 border-2 border-[#9ddfff]"
             >
-              <i class="fa-solid fa-clock"></i>
-            </button>
+              <button
+                class="w-10 h-10 rounded-lg flex items-center justify-center text-[#035e89] bg-[#eff9ff]"
+              >
+                <i class="fa-solid fa-clock"></i>
+              </button>
 
-            <h3 class="text-[#035e89] font-[700] text-lg sm:text-2xl">
-              Track Every Shipment in Real Time
-            </h3>
-            <p class="text-base sm:text-lg md:text-xl text-[#6d6d6d]">
-              Stay updated on your cargo’s exact location with instant tracking
-              notifications
-            </p>
+              <h3 class="text-[#035e89] font-[700] text-lg sm:text-2xl">
+                Track Every Shipment in Real Time
+              </h3>
+              <p class="text-base sm:text-lg md:text-xl text-[#6d6d6d]">
+                Stay updated on your cargo’s exact location with instant
+                tracking notifications
+              </p>
+            </div>
           </div>
 
-          <div
-            class="w-full text-start h-[220px] shadow-xl rounded-[20px] sm:h-[250px] flex flex-col gap-5 p-5 border-2 border-[#9ddfff]"
-          >
-            <button
-              class="w-10 h-10 rounded-lg flex items-center justify-center text-[#035e89] bg-[#eff9ff]"
+          <div data-aos="zoom-in-up">
+            <div
+              class="w-full text-start h-[220px] shadow-xl rounded-[20px] sm:h-[250px] flex flex-col gap-5 p-5 border-2 border-[#9ddfff]"
             >
-              <i class="fa-brands fa-square-web-awesome"></i>
-            </button>
+              <button
+                class="w-10 h-10 rounded-lg flex items-center justify-center text-[#035e89] bg-[#eff9ff]"
+              >
+                <i class="fa-brands fa-square-web-awesome"></i>
+              </button>
 
-            <h3 class="text-[#035e89] font-[700] text-lg sm:text-2xl">
-              Track Every Shipment in Real Time
-            </h3>
-            <p class="text-base sm:text-lg md:text-xl text-[#6d6d6d]">
-              Stay updated on your cargo’s exact location with instant tracking
-              notifications
-            </p>
+              <h3 class="text-[#035e89] font-[700] text-lg sm:text-2xl">
+                Track Every Shipment in Real Time
+              </h3>
+              <p class="text-base sm:text-lg md:text-xl text-[#6d6d6d]">
+                Stay updated on your cargo’s exact location with instant
+                tracking notifications
+              </p>
+            </div>
           </div>
 
-          <div
-            class="w-full text-start h-[220px] shadow-xl rounded-[20px] sm:h-[250px] flex flex-col gap-5 p-5 border-2 border-[#9ddfff]"
-          >
-            <button
-              class="w-10 h-10 rounded-lg flex items-center justify-center text-[#035e89] bg-[#eff9ff]"
+          <div data-aos="zoom-in">
+            <div
+              class="w-full text-start h-[220px] shadow-xl rounded-[20px] sm:h-[250px] flex flex-col gap-5 p-5 border-2 border-[#9ddfff]"
             >
-              <i class="fa-solid fa-book"></i>
-            </button>
+              <button
+                class="w-10 h-10 rounded-lg flex items-center justify-center text-[#035e89] bg-[#eff9ff]"
+              >
+                <i class="fa-solid fa-book"></i>
+              </button>
 
-            <h3 class="text-[#035e89] font-[700] text-lg sm:text-2xl">
-              Track Every Shipment in Real Time
-            </h3>
-            <p class="text-base sm:text-lg md:text-xl text-[#6d6d6d]">
-              Stay updated on your cargo’s exact location with instant tracking
-              notifications
-            </p>
+              <h3 class="text-[#035e89] font-[700] text-lg sm:text-2xl">
+                Track Every Shipment in Real Time
+              </h3>
+              <p class="text-base sm:text-lg md:text-xl text-[#6d6d6d]">
+                Stay updated on your cargo’s exact location with instant
+                tracking notifications
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -260,9 +269,10 @@
       <div class="w-[90%] m-auto grid grid-cols-2 md:grid-cols-4">
         <div class="flex flex-col gap-2 items-center w-full h-[100px]">
           <h4
+            id="deliveries"
             class="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-extrabold leading-[108%] text-center bg-gradient-to-r from-[#0179b4] via-[#3db0e5] to-[#88d8ff] bg-clip-text text-transparent"
           >
-            10,000+
+            0
           </h4>
           <h6 class="text-[#6d6d6d] text-base sm:text-lg md:text-xl">
             Deliveries Managed
@@ -318,14 +328,21 @@
             logistics with our cutting-edge solutions
           </h5>
           <button
-            class="h-8 sm:h-10 md:h-12 bg-[#035e89] text-xs sm:text-lg font-[600] w-full sm:w-[40%] md:w-[44%] text-white flex items-center justify-center"
+            class="h-8 sm:h-10 md:h-12 bg-[#035e89] hover:border-2 hover:border-[#035e89] hover:bg-transparent hover:text-[#035e89] transition-all duration-200 text-xs sm:text-lg font-[600] w-full sm:w-[40%] md:w-[44%] text-white flex items-center justify-center"
           >
             Get a Free Quote
           </button>
         </div>
 
-        <div class="ready-right w-full md:w-[45%]">
-          <img class="w-full" src="./imges/reaadysecton-img.png" alt="" />
+        <div class="ready-right w-full md:w-[45%] overflow-x-hidden">
+          <div
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500"
+          >
+            <img class="w-full" src="./imges/reaadysecton-img.png" alt="" />
+          </div>
         </div>
       </div>
     </section>
@@ -347,20 +364,20 @@
           </div>
 
           <div class="footer-item flex flex-col gap-4 w-full">
-            <h4 class="text-base sm:text-lg text-white">Support</h4>
+            <h4 class="text-lg sm:text-xl text-white">Support</h4>
             <a class="text-base text-white" href="#">Getting Started</a>
             <a class="text-base text-white" href="#">FAQS</a>
             <a class="text-base text-white" href="#">Help Articles</a>
           </div>
 
           <div class="footer-item2 flex flex-col gap-4 w-full">
-            <h4 class="text-base sm:text-lg text-white">Legal</h4>
+            <h4 class="text-lg sm:text-xl text-white">Legal</h4>
             <a class="text-base text-white" href="#">Terms & Conditions</a>
             <a class="text-base text-white" href="#">Privacy Policy</a>
           </div>
 
           <div class="footer-item3 flex flex-col gap-4 w-full">
-            <h4 class="text-base sm:text-lg text-white">Services</h4>
+            <h4 class="text-lg sm:text-xl text-white">Services</h4>
             <a class="text-base text-white" href="#">Shipment Tracking</a>
             <a class="text-base text-white" href="#">Route Optimization</a>
             <a class="text-base text-white" href="#">Inventory Management</a>
@@ -370,13 +387,13 @@
         </div>
 
         <div
-          class="footer-bottom flex flex-col md:flex-row gap-5 items-start md:items-center justify-between border-t border-[#fff] pt-7"
+          class="footer-bottom flex flex-col md:flex-row gap-5 items-center md:items-center justify-between border-t border-[#fff] pt-7"
         >
           <div class="footer-bottom-left flex items-center gap-3">
-            <button class="text-[#fff] text-lg sm:text-xl md:text-2xl">
+            <button class="text-[#fff] text-2xl sm:text-xl md:text-2xl">
               <i class="fa-brands fa-facebook"></i>
             </button>
-            <button class="text-[#fff] text-lg sm:text-xl md:text-2xl">
+            <button class="text-[#fff] text-2xl sm:text-xl md:text-2xl">
               <i class="fa-brands fa-telegram"></i>
             </button>
           </div>
@@ -390,10 +407,57 @@
     </footer>
     <!-- Footer finish  -->
 
+    <!-- Contact modal start  -->
+    <div
+      id="modal-con"
+      class="modal-con fixed top-0 left-[-200%] transition-all duration-300 w-[100%] h-screen flex items-center justify-center bg-white/30 z-20 backdrop-blur-md"
+    >
+      <div
+        class="modal-content w-[90%] rounded-2xl flex flex-col gap-4 sm:w-[30%] p-10 min-h-[270px] bg-[#ffffff7d] sm:min-h-[400px] border-2 shadow-2xl"
+      >
+        <input
+          class="h-12 w-full outline-none pl-3 border shadow-md"
+          type="text"
+          placeholder="Name.."
+        />
+        <input
+          class="h-12 w-full outline-none pl-3 border shadow-md"
+          type="text"
+          placeholder="Surname.."
+        />
+        <textarea
+          class="shadow-md p-3 min-h-[100px] text-gray-800 placeholder:text-gray-500 focus:outline-none border rounded"
+          placeholder="Message..."
+        ></textarea>
+        <button
+          class="h-12 flex items-center bg-[#035e89] hover:bg-[#035f89c8] text-[#fff] justify-center font-[500] text-lg sm:text-xl"
+        >
+          Send Message
+        </button>
+      </div>
+    </div>
+    
+    <!-- Contact modal finish  -->
+
+    <script>
+      const counter = new CountUp("deliveries", 1000); // 0 dan 1000 gacha
+      if (!counter.error) {
+        counter.start();
+      } else {
+        console.error(counter.error);
+      }
+
+
+
+    </script>
+
     <script>
       let hedaer_links_menu = document.getElementById("header-links");
       let menu_open_btn = document.getElementById("menu-open-btn");
       let menu_close_btn = document.getElementById("menu-close-btn");
+
+      let modal_container = document.getElementById("modal-con");
+      let modal_open_btn = document.getElementById("modal-open-btn");
 
       menu_open_btn.addEventListener("click", () => {
         hedaer_links_menu.classList.toggle("!left-0");
@@ -401,6 +465,22 @@
       menu_close_btn.addEventListener("click", () => {
         hedaer_links_menu.classList.toggle("!left-0");
       });
+
+      // Modal contact
+
+      modal_open_btn.addEventListener("click", () => {
+        modal_container.classList.toggle("!left-0");
+      });
+
+      modal_container.addEventListener("click", (e) => {
+        if (e.target.classList.contains("modal-con")) {
+          modal_container.classList.toggle("!left-0");
+        }
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
