@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logeel</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+      body {
+        font-family: "Nunito", sans-serif;
+      }
+      .showcase {
+        background: url("https://images8.alphacoders.com/102/1022822.jpg");
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Hedaer start -->
+    <header class="hedaer bg-[#fff] z-50 shadow-md sticky top-0 left-0">
+      <div
+        class="w-[90%] m-auto flex items-center justify-between py-4 sm:py-5"
+      >
+        <div class="header-left">
+          <a
+            href="./index.html"
+            class="text-2xl font-[700] sm:text-3xl md:text-4xl lg:text-5xl text-[#035e89]"
+            >Logeel</a
+          >
+        </div>
+        <nav
+          id="header-links"
+          class="header-center transition-all duration-300 border-r-2 md:border-none absolute top-0 left-[-200%] flex-col md:flex-row pl-[20px] md:pl-0 justify-start items-start pt-[30px] md:pt-0 h-screen md:h-auto w-[60%] bg-[#035e89] md:bg-transparent md:w-auto md:static md:flex flex md:items-center gap-4 sm:gap-5 md:gap-6"
+        >
+          <a
+            href="./index.html"
+            class="text-3xl font-[700] sm:text-3xl md:text-4xl lg:text-5xl text-[#fff] md:hidden"
+            >Logeel</a
+          >
+
+          <a
+            class="text-base border-b md:border-none text-[#fff] md:text-[#000] sm:text-base md:text-lg lg:text-xl font-[500]"
+            href="#"
+            >Home</a
+          >
+          <a
+            class="text-base text-[#fff] md:text-[#000] sm:text-base md:text-lg lg:text-xl font-[500]"
+            href="#"
+            >Services</a
+          >
+          <a
+            class="text-base text-[#fff] md:text-[#000] sm:text-base md:text-lg lg:text-xl font-[500]"
+            href="#"
+            >Pricing</a
+          >
+          <a
+            class="text-base text-[#fff] md:text-[#000] sm:text-base md:text-lg lg:text-xl font-[500]"
+            href="#"
+            >Track Shipment</a
+          >
+          <a
+            class="text-base text-[#fff] md:text-[#000] sm:text-base md:text-lg lg:text-xl font-[500]"
+            href="#"
+            >About Us</a
+          >
+          <button
+            id="menu-close-btn"
+            class="flex absolute top-3 right-3 md:hidden text-[#fff] text-3xl"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </nav>
+
+        <div
+          class="header-right w-[40%] sm:w-[25%] md:w-[14%] flex items-center gap-3 justify-end"
+        >
+          <button
+            class="h-8 sm:h-10 md:h-12 bg-[#035e89] text-xs sm:text-lg md:text-xl font-[600] w-full text-white flex items-center justify-center"
+          >
+            Contact us
+          </button>
+          <button
+            id="menu-open-btn"
+            class="flex md:hidden text-[#035e89] text-2xl"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Hedaer finish -->
+
+    <!-- Showcase start  -->
+    <section class="showcase overflow-y-hidden">
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-white/0"
+      ></div>
+
+      <div class="w-[90%] z-20 m-auto py-10 sm:py-18 md:py-20 lg:py-28">
+        <div
+          class="showcase-left flex flex-col gap-8 sm:gap-10 w-full md:w-[60%]"
+        >
+          <h1
+            class="text-3xl z-10 sm:text-4xl md:text-5xl lg:text-6xl text-[#035e89] font-[600]"
+          >
+            Effortless Logistics, <br />
+            Every Step of the Way.
+          </h1>
+          <h2 class="text-xl z-10 sm:text-3xl text-[] font-[500]">
+            Manage your shipments, track in real-time, and get the best
+            rates—all from one platform.
+          </h2>
+          <div
+            class="showcase-btns z-10 flex flex-col md:flex-row items-center gap-5"
+          >
+            <button
+              class="h-8 sm:h-10 md:h-12 bg-[#035e89] text-xs sm:text-lg font-[600] w-full md:w-[20%] text-white flex items-center justify-center"
+            >
+              Get a Free Quote
+            </button>
+            <button
+              class="h-8 sm:h-10 md:h-12 border-2 border-[#035e89] text-[#035e89] text-xs sm:text-lg font-[600] w-full md:w-[20%] flex items-center justify-center"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Showcase finish  -->
+
+    <!-- Three main services start -->
+    <section class="three-main-services mt-[60px]">
+      <div class="w-[90%] m-auto flex flex-col gap-10 text-center items-center">
+        <h3
+          class="text-2xl z-10 sm:text-3xl md:text-4xl lg:text-5xl font-[600]"
+        >
+          Three main <span class="text-[#0179b4]">services</span>
+        </h3>
+        <h5
+          class="text-base z-10 sm:text-lg md:text-xl text-[#6d6d6d] w-full text-center sm:w-[70%]"
+        >
+          Our app gives you unparalleled visibility into your entire logistics
+          network. Whether you’re managing a single delivery or overseeing
+          thousands, you can track the exact location of every shipment in real
+          time.
+        </h5>
+
+        <div
+          class="gap-4 grid-cols-1 sm:grid-cols-2 md:gap-7 grid md:grid-cols-3"
+        >
+          <div
+            class="w-full text-start h-[220px] shadow-xl rounded-[20px] sm:h-[250px] flex flex-col gap-5 p-5 border-2 border-[#9ddfff]"
+          >
+            <button
+              class="w-10 h-10 rounded-lg flex items-center justify-center text-[#035e89] bg-[#eff9ff]"
+            >
+              <i class="fa-solid fa-clock"></i>
+            </button>
+
+            <h3 class="text-[#035e89] font-[700] text-lg sm:text-2xl">
+              Track Every Shipment in Real Time
+            </h3>
+            <p class="text-base sm:text-lg md:text-xl text-[#6d6d6d]">
+              Stay updated on your cargo’s exact location with instant tracking
+              notifications
+            </p>
+          </div>
+
+          <div
+            class="w-full text-start h-[220px] shadow-xl rounded-[20px] sm:h-[250px] flex flex-col gap-5 p-5 border-2 border-[#9ddfff]"
+          >
+            <button
+              class="w-10 h-10 rounded-lg flex items-center justify-center text-[#035e89] bg-[#eff9ff]"
+            >
+              <i class="fa-brands fa-square-web-awesome"></i>
+            </button>
+
+            <h3 class="text-[#035e89] font-[700] text-lg sm:text-2xl">
+              Track Every Shipment in Real Time
+            </h3>
+            <p class="text-base sm:text-lg md:text-xl text-[#6d6d6d]">
+              Stay updated on your cargo’s exact location with instant tracking
+              notifications
+            </p>
+          </div>
+
+          <div
+            class="w-full text-start h-[220px] shadow-xl rounded-[20px] sm:h-[250px] flex flex-col gap-5 p-5 border-2 border-[#9ddfff]"
+          >
+            <button
+              class="w-10 h-10 rounded-lg flex items-center justify-center text-[#035e89] bg-[#eff9ff]"
+            >
+              <i class="fa-solid fa-book"></i>
+            </button>
+
+            <h3 class="text-[#035e89] font-[700] text-lg sm:text-2xl">
+              Track Every Shipment in Real Time
+            </h3>
+            <p class="text-base sm:text-lg md:text-xl text-[#6d6d6d]">
+              Stay updated on your cargo’s exact location with instant tracking
+              notifications
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Three main services finish -->
+
+    <!-- Safety section start  -->
+    <section class="safety mt-[80px]">
+      <div class="w-[90%] m-auto">
+        <div
+          class="safety-con bg-[#fafafa] gap-7 p-8 rounded-7xl w-full md:w-[80%] m-auto shadow-xl relative flex-col md:flex-row items-center justify-between"
+        >
+          <div
+            class="safety-left w-full md:w-[45%] flex flex-col gap-3 sm:gap-5"
+          >
+            <h3 class="text-lg sm:text-lg md:text-2xl font-[600]">
+              Your Fleet’s Safety, Our Top Priority
+            </h3>
+            <h6 class="text-base sm:text-lg md:text-xl">
+              Regular safety checks and maintenance are part of our commitment
+              to keeping your fleet in top condition. Our app schedules and
+              tracks inspections, ensuring that every vehicle meets stringent
+              safety standards
+            </h6>
+            <img
+              class="w-10 h-10"
+              src="./imges/qoshtirnoq222.svg"
+              alt="Logistic company in Tashkent"
+            />
+          </div>
+          <div class="safety-right flex items-end w-[45%]">
+            <img
+              class="absolute bottom-0 hidden md:flex -right-16"
+              src="./imges/carimg.svg"
+              alt="Logistic company - Mashinada yetkazib berish "
+            />
+            <button
+              class="h-8 sm:h-10 md:h-12 bg-[#035e89] text-xs sm:text-lg font-[600] w-full sm:w-[40%] md:w-[44%] text-white flex items-center justify-center"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Safety section finish -->
+
+    <!-- Our results start  -->
+    <section class="mt-[50px] sm:mt-[70px] md:mt-[100px]">
+      <div class="w-[90%] m-auto grid grid-cols-2 md:grid-cols-4">
+        <div class="flex flex-col gap-2 items-center w-full h-[100px]">
+          <h4
+            class="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-extrabold leading-[108%] text-center bg-gradient-to-r from-[#0179b4] via-[#3db0e5] to-[#88d8ff] bg-clip-text text-transparent"
+          >
+            10,000+
+          </h4>
+          <h6 class="text-[#6d6d6d] text-base sm:text-lg md:text-xl">
+            Deliveries Managed
+          </h6>
+        </div>
+        <div class="flex flex-col gap-2 items-center w-full h-[100px]">
+          <h4
+            class="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-extrabold leading-[108%] text-center bg-gradient-to-r from-[#0179b4] via-[#3db0e5] to-[#88d8ff] bg-clip-text text-transparent"
+          >
+            2,500+
+          </h4>
+          <h6 class="text-[#6d6d6d] text-base sm:text-lg md:text-xl">
+            Active <Clients></Clients>
+          </h6>
+        </div>
+        <div class="flex flex-col gap-2 items-center w-full h-[100px]">
+          <h4
+            class="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-extrabold leading-[108%] text-center bg-gradient-to-r from-[#0179b4] via-[#3db0e5] to-[#88d8ff] bg-clip-text text-transparent"
+          >
+            98%
+          </h4>
+          <h6 class="text-[#6d6d6d] text-base sm:text-lg md:text-xl">
+            On-Time Delivery Rate
+          </h6>
+        </div>
+        <div class="flex flex-col gap-2 items-center w-full h-[100px]">
+          <h4
+            class="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-extrabold leading-[108%] text-center bg-gradient-to-r from-[#0179b4] via-[#3db0e5] to-[#88d8ff] bg-clip-text text-transparent"
+          >
+            200+
+          </h4>
+          <h6 class="text-[#6d6d6d] text-base sm:text-lg md:text-xl">
+            Industry Awards
+          </h6>
+        </div>
+      </div>
+    </section>
+    <!-- Our results finish -->
+
+    <!-- Ready section start  -->
+    <section class="mt-[30px] md:mt-[100px]">
+      <div
+        class="w-[90%] bg-[#f2faff] rounded-[20px] p-7 items-center md:p-10 m-auto flex flex-col gap-3 md:flex-row md:justify-between"
+      >
+        <div class="ready-left flex flex-col w-full md:w-[45%] gap-5">
+          <h2
+            class="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-[#035e89]"
+          >
+            Ready to Revolutionize Your Logistics Operations?
+          </h2>
+          <h5 class="text-[#4d4c52] text-lg sm:text-xl">
+            Join countless other businesses that have streamlined their
+            logistics with our cutting-edge solutions
+          </h5>
+          <button
+            class="h-8 sm:h-10 md:h-12 bg-[#035e89] text-xs sm:text-lg font-[600] w-full sm:w-[40%] md:w-[44%] text-white flex items-center justify-center"
+          >
+            Get a Free Quote
+          </button>
+        </div>
+
+        <div class="ready-right w-full md:w-[45%]">
+          <img class="w-full" src="./imges/reaadysecton-img.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- Ready section finish  -->
+
+    <!-- Footer start  -->
+    <footer class="footer bg-[#035e89]">
+      <div class="w-[90%] m-auto flex flex-col gap-4 py-8 sm:py-10">
+        <div class="footer-top grid grid-cols-2 md:grid-cols-4">
+          <div class="footer-logo flex flex-col gap-10 w-full">
+            <a
+              href="./index.html"
+              class="text-2xl font-[700] sm:text-3xl md:text-4xl lg:text-5xl text-[#fff]"
+              >Logeel</a
+            >
+            <p class="text-base text-white w-[80%]">
+              We’re here to support you every step of the way
+            </p>
+          </div>
+
+          <div class="footer-item flex flex-col gap-4 w-full">
+            <h4 class="text-base sm:text-lg text-white">Support</h4>
+            <a class="text-base text-white" href="#">Getting Started</a>
+            <a class="text-base text-white" href="#">FAQS</a>
+            <a class="text-base text-white" href="#">Help Articles</a>
+          </div>
+
+          <div class="footer-item2 flex flex-col gap-4 w-full">
+            <h4 class="text-base sm:text-lg text-white">Legal</h4>
+            <a class="text-base text-white" href="#">Terms & Conditions</a>
+            <a class="text-base text-white" href="#">Privacy Policy</a>
+          </div>
+
+          <div class="footer-item3 flex flex-col gap-4 w-full">
+            <h4 class="text-base sm:text-lg text-white">Services</h4>
+            <a class="text-base text-white" href="#">Shipment Tracking</a>
+            <a class="text-base text-white" href="#">Route Optimization</a>
+            <a class="text-base text-white" href="#">Inventory Management</a>
+            <a class="text-base text-white" href="#">Freight Management</a>
+            <a class="text-base text-white" href="#">Real-Time Analytics</a>
+          </div>
+        </div>
+
+        <div
+          class="footer-bottom flex flex-col md:flex-row gap-5 items-start md:items-center justify-between border-t border-[#fff] pt-7"
+        >
+          <div class="footer-bottom-left flex items-center gap-3">
+            <button class="text-[#fff] text-lg sm:text-xl md:text-2xl">
+              <i class="fa-brands fa-facebook"></i>
+            </button>
+            <button class="text-[#fff] text-lg sm:text-xl md:text-2xl">
+              <i class="fa-brands fa-telegram"></i>
+            </button>
+          </div>
+          <div class="footer-bottom-right">
+            <p class="text-base sm:text-lg text-white">
+              Swiftlogix 2024 © All Rights Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer finish  -->
+
+    <script>
+      let hedaer_links_menu = document.getElementById("header-links");
+      let menu_open_btn = document.getElementById("menu-open-btn");
+      let menu_close_btn = document.getElementById("menu-close-btn");
+
+      menu_open_btn.addEventListener("click", () => {
+        hedaer_links_menu.classList.toggle("!left-0");
+      });
+      menu_close_btn.addEventListener("click", () => {
+        hedaer_links_menu.classList.toggle("!left-0");
+      });
+    </script>
+  </body>
+</html>
